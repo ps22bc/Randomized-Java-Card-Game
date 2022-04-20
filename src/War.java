@@ -24,7 +24,7 @@ public class War {
 			System.out.println(counter);
 			if(Player[counter].value() > Computer[counter].value()) {
 				PlayerScore +=1;
-				System.out.println("Battle " + (counter+1) + ": Player:" + Player[counter].identifier() + "Computer: " + Computer[counter].identifier());
+				System.out.println("Battle " + (counter+1) + ": Player: " + Player[counter].identifier() + "Computer: " + Computer[counter].identifier());
 				System.out.println("Current Score: " + PlayerScore + " - " + ComputerScore + " - " + TieScore + " Player Won");
 				
 				
@@ -32,7 +32,7 @@ public class War {
 			
 			else if(Player[counter].value() < Computer[counter].value()) {
 				ComputerScore += 1;
-				System.out.println("Battle " + (counter+1) + ": Player:" + Player[counter].identifier() + "Computer: " + Computer[counter].identifier());
+				System.out.println("Battle " + (counter+1) + ": Player: " + Player[counter].identifier() + "Computer: " + Computer[counter].identifier());
 				System.out.println("Current Score: " + PlayerScore + " - " + ComputerScore + " - " + TieScore + " Computer Won");
 				
 				
@@ -47,14 +47,14 @@ public class War {
 
 	}
 		if(PlayerScore > ComputerScore) {
-			System.out.println("PLAYER HAS WON!!");
+			System.out.println("Player has won!");
 		}
 
 		else if(PlayerScore < ComputerScore) {
-			System.out.println("COMPUTER HAS WON!!");
+			System.out.println("Computer has won!");
 		}
 		else {
-			System.out.println("IT WAS A TIE");
+			System.out.println("It was a tie!");
 		}
 
 }

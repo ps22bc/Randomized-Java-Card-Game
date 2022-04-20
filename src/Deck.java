@@ -9,10 +9,10 @@ class Deck{
 		String strRank;
 		
 		for (int suitIndex=0; suitIndex<4; suitIndex++) {
-			if(suitIndex==0) strSuit="Clubs";
-			else if (suitIndex==1) strSuit="Diamonds";
-			else if (suitIndex==1)strSuit="Hearts";
-			else strSuit="Spades";
+			if(suitIndex==0) strSuit="Clubs - ";
+			else if (suitIndex==1) strSuit="Diamonds - ";
+			else if (suitIndex==1)strSuit="Hearts - ";
+			else strSuit="Spades - ";
 			
 			for (int rankIndex=0; rankIndex<13; rankIndex++) {
 				switch(rankIndex) {
